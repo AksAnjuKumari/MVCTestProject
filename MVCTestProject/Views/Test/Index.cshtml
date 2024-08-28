@@ -1,0 +1,17 @@
+﻿@model MVCTestProject.Models.View.CustProViewModel;
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <div >
+
+        @Html.Partial("_CustomerPartial", Model.CustomerList)
+
+    </div><br /><br />
+    <hr />
+    <div >
+
+        @Html.Partial("_ProductPartial", Model.ProductList)
+
+    </div>
+
